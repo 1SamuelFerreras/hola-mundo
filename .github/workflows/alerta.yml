@@ -1,0 +1,12 @@
+name: Notificar ntfy
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Enviar alerta a ntfy
+        run: |
+          curl -d "Nuevo código subido por Samuel" ntfy.sh/devops-itla
