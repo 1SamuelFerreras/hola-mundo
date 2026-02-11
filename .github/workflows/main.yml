@@ -11,4 +11,4 @@ jobs:
       - name: Install Surge and Deploy
         run: |
           npm install -g surge
-          surge ./ ${{ github.event.repository.name }}-${{ github.actor }}.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+          surge ./ samuel-proyecto-final.surge.sh --token ${{ secrets.SURGE_TOKEN }}
